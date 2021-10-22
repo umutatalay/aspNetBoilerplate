@@ -21,6 +21,14 @@ namespace Umut.EntityFrameworkCore
         {
         }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            
+
+            optionsBuilder.UseSqlServer("Server=DESKTOP-IT4752E; Database=DbABPumut;Integrated Security=True;");
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
