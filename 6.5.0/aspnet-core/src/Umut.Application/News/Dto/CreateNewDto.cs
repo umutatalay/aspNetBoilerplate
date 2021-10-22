@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Umut.News.Dto
 {
-    class CreateNewDto
+    public class CreateNewDto
     {
     }
 }
